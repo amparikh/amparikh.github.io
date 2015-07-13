@@ -1,0 +1,17 @@
+Home page:
+
+1. Need to come up responsive design and make CSS updates
+2. when clickign contact, slide down a form
+3. font optimization
+4. update anchor tag positions for proper linking
+5. optimze fade in of intro background pics
+
+Explorer Page
+1. add links to the individual attractions, clubs, restaurants. 
+2. Get descriptions of each neighborhood
+3. *maybe* for each city have a background with picture of city
+
+
+
+things to do: 
+

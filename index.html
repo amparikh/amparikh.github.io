@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+  
+    <title>Adventurer Travel Guide</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+ 
+
+
+    <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js">
+    </script>
+  
+    <link rel="import" href="components/bower_components/paper-button/paper-button.html">
+
+  </head>
+  
+  <body>
+    <header id="background_home">
+      <nav class="clearfix">
+        <a href="index.html"><img src = "images/logo.png" alt = "home"></a>
+         <h1>AP Travel Team</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="link1"><a href="#explore">Explorer</a></li>
+          <li id="link2"><a href="#reviews">Testimonials</a></li>
+          <li id="link3"><a href="#aboutus">About Us</a></li>
+        </ul>
+      </nav> 
+    
+      <section class="intro">
+        <h1>Be Inspired. Discover something breath-taking</h1>
+        / <br> \
+   
+      </section>
+     
+     </header>
+
+      <section id = "city_overview">
+        <h1>City Guides</h1>
+        <div id="thumbnails">
+          <img src="images/chicago.jpg" alt="chicago">
+          <img src="images/new_york_city.jpg" alt="new york city">
+          <img src="images/portland.jpg" alt="portland">
+          <img src="images/sf.jpg" alt="sf">
+        </div>
+      </section>
+<div class="city_card">
+    <a name="explore"></a>
+    <section id="nyc" class = "city_details">
+      <h2>New York City</h2>
+      <img class = "leftarrow" src="images/left_arrow.png" alt="none">
+       
+      <ul>
+        <h3>Neighborhoods</h3>
+        <li>Little Italy</li>
+        <li>Tribeca</li>
+        <li>Time Square</li>
+        <li>Meatpacking District</li>
+        <li>East Village</li>
+      </ul>
+      
+     <img class = "rightarrow" src="images/right_arrow.png" alt="none">
+    </section>
+
+    <img src="images/new_york_city.jpg" alt="nyc">
+</div>
+    
+    <div class="city_card">
+     <section id="chicago" class = "city_details">
+      <h2>Chicago</h2>
+      <img class = "leftarrow" src="images/left_arrow.png" alt="none">
+      <ul>
+        <h3>Neighborhoods</h3>
+        <li>Lincoln Park</li>
+        <li>South Loop</li>
+        <li>Wicker Park</li>
+        <li>River North</li>
+        <li>Wrigleyville</li>
+      </ul>
+      <img class = "rightarrow" src="images/right_arrow.png" alt="none">
+    </section>
+    <img src="images/chicago.jpg" alt="chi">
+  </div>
+
+   <div class="city_card">
+     <section id="pdx" class = "city_details">
+      <h2>Portland (Oregon)</h2>
+      <img class = "leftarrow" src="images/left_arrow.png" alt="none">
+      <ul>
+        <h3>Neighborhoods</h3>
+        <li>Pearl District</li>
+        <li>Downtown</li>
+        <li>Northwest District</li>
+        <li>Old Town Chinatown</li>
+        <li>Alberta</li>
+      </ul>
+      <img class = "rightarrow" src="images/right_arrow.png" alt="none">
+    </section>
+    <img src="images/portland.jpg" alt="pdx">
+    </div>
+
+    <div class="city_card">
+     <section id="sf" class = "city_details">
+      <h2>San Francisco</h2>
+      <img class = "leftarrow" src="images/left_arrow.png" alt="none">
+      <ul>
+        <h3>Neighborhoods</h3>
+        <li>The Mission</li>
+        <li>The Marina</li>
+        <li>Mission Bay</li>
+        <li>Pacific Heights</li>
+        <li>Rockridge</li>
+      </ul> 
+      <img class = "rightarrow" src="images/right_arrow.png" alt="none">    
+    </section>
+    <img src="images/sf.jpg" alt="sf">
+    </div>
+
+      <section class="clearfix" id = "testimonials">
+        <a name="reviews"></a>
+        <h1>Testimonials</h1>
+        <img src="images/man1.png" alt="guy">
+        <img src="images/man1.png" alt="guy">
+        <img src="images/man1.png" alt="guy">
+      </section>
+
+      <section id = "about_us">
+         <a name="aboutus"></a>
+         <h1>About Us</h1>
+         <div id = "blurb">
+          <p>We're so glad you've taken the time to browse through our travel guides. The AP Travel Team was started by a group of 3 undergraduate students at University of Michigan (Go Blue!) who had a passion for travel. However, we quickly realized it was difficult to know what to do in each city and existing solutions were underwhelming. </p>
+          <p>We decided to build a guide dedicated to letting others know the best places to visit in cities we are familiar with. Every place on this list has been tried and tested by our very own team! We are constantly hiring new team members in other cities to expand our city guides. Look out for Boston, Washington DC, and Miami to be added in late 2015. Thanks again for visiting our site and we hope you spread the word about our guides. Happy Travels!</p>
+         
+         </div>
+
+         <div id = "about_pic">
+           <div><img src="images/clear_day_grass.jpg" alt="ap"></div>
+         </div>
+
+      </section>
+
+      <section class = "contact_us">
+         <a name="contactus"></a>
+         <h3>Have questions or suggestions? We want to hear from you!</h3>
+         <paper-button raised>Contact Us</paper-button>
+         <br>
+         <form action="//formspree.io/sample@email.com"
+      method="POST">
+            <input type="text" name="name" placeholder="Full Name"><br><br>
+            <input type="email" name="_replyto" placeholder="Email Address"><br><br>
+            <textarea ="message" rows="10" col="100" placeholder="Your message"></textarea><br><br>
+            <input type="submit" value="Send">
+</form>
+      </section>
+
+      <footer>
+        AP Travel Team |
+        444 N. Wabash Ave. |
+        Chicago, IL 60611 |
+        312.234.5678
+      </footer>
+
+      <script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/main.js"></script>
+  </body>
+</html>

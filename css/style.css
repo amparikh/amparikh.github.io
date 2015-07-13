@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
+
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* ==========================================================================
+   Author's custom styles
+  ========================================================================== */
+
+
+
+/* Global
+   ================================================================ */
+#explorer {
+  background-color: black;
+}
+
+/* Layout
+   ================================================================ */
+
+#blurb {
+  max-width: 50%;
+  float:left;
+  padding: 5px 5px 5px 20px;
+}
+
+#blurb p {
+  line-height: 2;
+}
+#about_pic {
+  display: inline-block;
+  max-width: 50%;
+  clear: both;
+  padding: 5px 5px 5px 5px;
+}
+
+#about_pic img {
+  max-width: 90%;
+  padding-left: 60px;
+}
+
+
+
+
+
+/* Headings
+   ================================================================ */
+
+
+/* Text Styles
+   ================================================================ */
+h1,h2 {
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+
+/* Header
+   ================================================================ */
+#background_home {
+background-image: url('../images/landscape.jpg');
+background-position: center;
+background-size: cover;
+transition: all 2s ease;
+}
+/* Sections
+   ================================================================ */
+section {
+  max-width: 1279px;
+  background-size: cover;
+}
+
+.intro h1 {
+  text-align: center;
+  color: white;
+  line-height: 550px;
+  margin: 0px 0px 0px 0px;
+}
+
+.intro p {
+  display: block;
+  text-align: center;
+  font-size: 400;
+}
+
+#testimonials {
+  background: #E0E1E1;
+}
+
+#testimonials img {
+  display: inline-block;
+  padding: 10px 22px 10px 22px;
+  clear:both;
+  
+}
+
+#city_overview img {
+  width:35%;
+  z-index: 5;
+}
+
+#thumbnails {
+  margin-left: 22%;
+}
+
+#city_overview,#about_us, .contact_us {
+  height:auto;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  clear:both;
+}
+
+.leftarrow, .rightarrow {
+  max-width: 7%;
+  margin-left: 5%;
+  margin-bottom: 150px;
+  display: inline-block;
+}
+
+.city_details {
+  float: left;
+  background: white;
+  width: 50%;
+  height: 500px;
+}
+
+.city_details h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.city_details ul {
+  width: 68%;
+  display: inline-block;
+  margin: 0% 0% 0% 0%;
+  clear: both;
+  text-align: center;
+}
+
+.city_details li {
+  width: 100%;
+  list-style-type: none;
+  font-size: 25px;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.city_details + img {
+  height: 500px;
+  width: 50%;
+}
+
+
+
+
+.city_card {
+  margin: 0 auto;
+  width: 90%;
+  background: white;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 0 1em #9B9E94;
+  margin-bottom: 1%;
+}
+
+
+/* Footer
+   ================================================================ */
+
+footer {
+  background: #E91C8C;
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+
+/* Navigation
+   ================================================================ */
+
+nav img, nav h1{
+  max-height: 60px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: white;
+  line-height: 65px;
+  font-family: 'Cinzel' sans-serif;
+  font-size: 40px; 
+}
+
+nav li{
+  display: inline-block;
+  float: left;
+  padding: 10px 10px 10px 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+nav li:hover{
+  border-bottom: 3px solid #37DA26;
+}
+
+nav ul {
+  float: right;
+}
+
+nav {
+  clear:both;
+  position: fixed;
+  width: 100%;
+  padding-right: 10px;
+  z-index: 100;
+}
+
+.selected {
+  border-bottom: 3px solid #37DA26;
+}
+
+.navScroll {
+  background: white;
+  border-bottom: 5px solid #065273;
+}
+
+.navScrollFont {
+  color: #777777;
+}
+
+.navScrollTitle {
+  color: #053F61;
+}
+
+
+/* Buttons/Forms
+   ================================================================ */
+.contact_us paper-button {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  background-color: #FF5356;
+  color: white;
+
+}
+
+form {
+  text-align: center;
+}
+
+form input {
+  font-color: black;  
+}
+
+form textarea {
+  border-color: #BFBFBF
+}
