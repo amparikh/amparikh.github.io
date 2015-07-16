@@ -1,60 +1,33 @@
-setInterval('changePicture()',5000);
 var currentHeaderPic = 0;
 var headerPic = ["url('../final_project/images/landscape.jpg')","url('../final_project/images/leaves.jpg')","url('../final_project/images/forest_waterfall.jpg')","url('../final_project/images/clear_day_grass.jpg')","url('../final_project/images/ornament.jpg')","url('../final_project/images/winter_sunrise.jpg')","url('../final_project/images/open_field.jpg')"];
 
-var nyc = 0;
-var nycdetails = ['<h3>Neighborhoods</h3><li>Little Italy</li><li>Tribeca</li><li>Time Square</li><li>Meatpacking District</li><li>East Village</li>','<h3>Restaurants</h3><li>Seafood: Le Bernardin</li><li>Italian: Marea</li><li>American: Gotham Bar and Grill</li><li>French: Bouley</li><li>Sushi: Sushi Yasuda</li>','<h3>Attractions</h3><li>Empire State Building</li><li>Statue of Libery</li><li>Brooklyn Bridge</li><li>Central Park</li><li>Bronx Zoo</li>','<h3>Nightclubs</h3><li>Santos Party House</li><li>Provocateur</li><li>Output</li><li>Le Bain at the Standard</li><li>Cielo</li>'];
+var cities = [0, 0, 0, 0];
 
-var chi = 0;
-var chidetails = ['<h3>Neighborhoods</h3><li>Lincoln Park</li><li>South Loop</li><li>Wicker Park</li><li>River North</li><li>Wrigleyville</li>',' <h3>Restaurants</h3><li>Seafood: Catch 35 Restaurant</li><li>Italian: La Scarola</li><li>American: Alinea</li><li>French: Everest Restaurant</li><li>Sushi: Toro Sushi</li>','<h3>Attractions</h3><li>Willis Tower Skydeck</li><li>Millenium Park</li><li>Lincoln Park Zoo</li><li>Navy Pier</li><li>Shedd Aquarium</li>','<h3>Nightclubs</h3><li>Sound Bar</li><li>Paris Club</li><li>Roof on the Wit</li><li>The Mid</li><li>Beauty Bar</li>'];
 
-var pdx=0;
-var pdxdetails = ['<h3>Neighborhoods</h3><li>Pearl District</li><li>Downtown</li><li>Northwest District</li><li>Old Town Chinatown</li><li>Alberta</li>',"<h3>Restaurants</h3><li>Seafood: McCormick</li><li>Italian: Piazza Italia</li><li>American: Jake's Famous Crawfish</li><li>French: LePigeon</li><li>Sushi: Bamboo Sushi</li>",'<h3>Attractions</h3><li>Pittock Mansion</li><li>Voodoo Donut</li><li>Tom McCall Waterfront Park</li><li>Oregon Museum of Science and Industry</li><li>Pioneer Courthouse Square</li>','<h3>Nightclubs</h3><li>Departure</li><li>Splash Bar</li><li>Holocene</li><li>Barrel Room</li><li>Crown Room</li>'];
-
-var sfo=0;
-var sfodetails = ['<h3>Neighborhoods</h3><li>The Mission</li><li>The Marina</li><li>Mission Bay</li><li>Pacific Heights</li><li>Rockridge</li>',"<h3>Restaurants</h3><li>Seafood: Sotto Mare</li><li>Italian: La Ciccia</li><li>American: Michael Mina</li><li>French: L'Ardoise</li><li>Sushi: Ebisu Restaurant</li>","<h3>Attractions</h3><li>Fisherman's Wharf</li><li>Union Square</li><li>Golden Gate Park/Bridge</li><li>Alcatraz</li><li>Ghirardelli Square</li>",'<h3>Nightclubs</h3><li>Mighty</li><li>Mezzanine</li><li>Public Works</li><li>Mercer</li><li>Ruby Skye</li>'];
+setInterval('changePicture()',5000);
 
 $('form').hide();
 
-$('#nyc .rightarrow').on('click',function () {
-   nyc++;
-   $('#nyc ul').html(nycdetails[nyc]);
+$('#nyc .tab').eq(0).addClass('active');
+$('#chicago .tab').eq(0).addClass('active'); 
+$('#pdx .tab').eq(0).addClass('active');
+$('#sf .tab').eq(0).addClass('active');
+
+
+$('.arrow').on('click',function () {
+  var parent = $(this).closest('.city_details');
+  var selectedSlide = parent.data('city');
+
+  if ($(this).data('dir') === "right") {
+    cities[selectedSlide]++;
+  } else {
+    cities[selectedSlide]--;
+  }
+  
+  $(parent).find('.tab').removeClass('active');
+  $(parent).find('.tab').eq(cities[selectedSlide]).addClass('active');
 });
 
-$('#nyc .leftarrow').on('click',function () {
-   nyc--;
-   $('#nyc ul').html(nycdetails[nyc]);
-});
-
-$('#chicago .rightarrow').on('click',function () {
-   chi++;
-   $('#chicago ul').html(chidetails[chi]);
-});
-
-$('#chicago .leftarrow').on('click',function () {
-   chi--;
-   $('#chicago ul').html(chidetails[chi]);
-});
-
-$('#pdx .rightarrow').on('click',function () {
-   pdx++;
-   $('#pdx ul').html(pdxdetails[pdx]);
-});
-
-$('#pdx .leftarrow').on('click',function () {
-   pdx--;
-   $('#pdx ul').html(pdxdetails[pdx]);
-});
-
-$('#sf .rightarrow').on('click',function () {
-   sfo++;
-   $('#sf ul').html(sfodetails[sfo]);
-});
-
-$('#sf .leftarrow').on('click',function () {
-   sfo--;
-   $('#sf ul').html(sfodetails[sfo]);
-});
 
 $('paper-button').on('click',function() {
   $('form').slideDown(600);
@@ -104,8 +77,6 @@ function navBackground(number){
    }
 }
 
-
-
 function unSelect() {
   $('#link1,#link2,#link3').removeClass('selected');
 }
@@ -143,7 +114,12 @@ function unSelect() {
      //3. PRINT A ONE-LINER ABOUT THE CITY (ex. for NYC, it might print "High-energy city that never sleeps")
      //4. ROLLING OFF THE PICTURE WILL REMOVE EFFECTS MENTIONED IN 'A'
 
- 
+/*
+ MARK'S COMMENTS
+ $('#nyc .tab').eq(2).addClass('active');
+
+$('#nyc .tab').removeClass('active')
+ $('#nyc .tab').eq(index).addClass('active');
 
 
   document.addEventListener('WebComponentsReady', function() {
@@ -153,3 +129,4 @@ function unSelect() {
           greeting.textContent = 'Hello, ' + input.value;
         });
       });
+*/

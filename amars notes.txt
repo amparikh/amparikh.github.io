@@ -1,17 +1,15 @@
-Home page:
+OUTSTANDING ITEMS:
 
-1. Need to come up responsive design and make CSS updates
-2. when clickign contact, slide down a form
-3. font optimization
-4. update anchor tag positions for proper linking
-5. optimze fade in of intro background pics
+1. BUG: Need to cap the carousel button clicks so the counter doesnt' go too high
+2. Graying out on hover of relevant pics
+2. Change up pics
+3. responsive design
+4. font optimization
+5. update anchor tag positions for proper linking
+6. bonus: add links individual attractions, restaurants,etc
+7. bonus: add description of neighborhood
 
-Explorer Page
-1. add links to the individual attractions, clubs, restaurants. 
-2. Get descriptions of each neighborhood
-3. *maybe* for each city have a background with picture of city
-
-
-
-things to do: 
-
+check:
+html 5 and css code checker
+indentation
+removal of unneeded code
