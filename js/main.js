@@ -1,5 +1,5 @@
   var currentHeaderPic = 0;
-  var headerPic = ["url('../final_project/images/landscape.jpg')","url('../final_project/images/leaves.jpg')","url('../final_project/images/forest_waterfall.jpg')","url('../final_project/images/clear_day_grass.jpg')","url('../final_project/images/ornament.jpg')","url('../final_project/images/winter_sunrise.jpg')","url('../final_project/images/open_field.jpg')"];
+  var headerPic = ["url('images/landscape.jpg')","url('images/leaves.jpg')","url('images/forest_waterfall.jpg')","url('images/clear_day_grass.jpg')","url('images/ornament.jpg')","url('images/winter_sunrise.jpg')","url('images/open_field.jpg')"];
 
   var cities = [0, 0, 0, 0];
 
